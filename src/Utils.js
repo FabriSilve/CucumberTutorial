@@ -1,10 +1,14 @@
 class Util {
-  constructor() {
-    this.num = 0;
+  constructor(init = 0) {
+    this.num = init;
   }
 
   add(x) {
     this.num = this.num + x;
+  }
+
+  times(x) {
+    this.num = this.num * x;
   }
 
   result() {
