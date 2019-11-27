@@ -29,6 +29,11 @@ When('I add the following numbers:', function (table) {
     .map(row => row[0])
     .map(v => util.add(v))
 });
+When('I take the following actions:', function (table) {
+  const data = table.rowsHash();
+  util.add(data.add);
+  util.times(data.times);
+});
 
 
 Then('I end up with {int}', function (input) {

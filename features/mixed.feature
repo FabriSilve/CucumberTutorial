@@ -18,3 +18,11 @@ Feature: Mixed calls
       | 2 |
     When I multiply by 3
     Then I end up with 9
+
+  Scenario: Add and multiply
+
+    Given I start with 3
+    When I take the following actions:
+      | add   | 3 |
+      | times | 5 |
+    Then I end up with 30
