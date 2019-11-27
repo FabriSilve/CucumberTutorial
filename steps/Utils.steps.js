@@ -34,6 +34,9 @@ When('I take the following actions:', function (table) {
   util.add(data.add);
   util.times(data.times);
 });
+When('I subtract {int}', function(input) {
+  return util.asyncSubtract(input);
+});
 
 
 Then('I end up with {int}', function (input) {
