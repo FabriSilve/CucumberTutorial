@@ -1,0 +1,15 @@
+{
+  "name": "cucumbertutorial",
+  "version": "1.0.0",
+  "description": "Tutorial to learn cucumberjs basic",
+  "main": "index.js",
+  "scripts": {
+    "cucumber": "cucumber-js ./features -r ./steps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FabriSilve",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^6.0.5"
+  }
+}
